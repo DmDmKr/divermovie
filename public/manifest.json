@@ -1,0 +1,9 @@
+{
+  "short_name": "Diver movie",
+  "name": "Diver movie website",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "aquamarine"
+}
