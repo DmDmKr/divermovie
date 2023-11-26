@@ -5,11 +5,12 @@
   display: flex;
   align-items: center; /* Center items vertically */
   justify-content: center;
-  padding: 0 20px; /* Horizontal padding */
-  font-family: Arial, sans-serif;
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navbar a {
+  text-align: center;
   text-decoration: none; /* Remove underlines */
   color: #ecf0f1; /* Light color for contrast */
   margin: 0 100px; /* Space out links */
@@ -25,25 +26,49 @@
   list-style-type: none;
   display: flex;
   gap: 1rem;
+  padding-left: 0px;
+  width: auto;
 }
 
 .navbar-links li a {
   color: #fff;
   text-decoration: none;
   transition: color 0.3s ease;
+  flex-grow: 1;
 }
 
 .navbar-links li a:hover {
   color: #ff4500;
 }
 
-@media (max-width: 768px) {
+/* For portrait mode */
+@media (max-width: 768px) and (orientation: portrait) {
   .navbar {
-    flex-direction: column; /* Stack items vertically */
-    height: auto; /* Auto adjust height */
+    flex-direction: column;
+    height: auto;
   }
 
-  .navbar a {
-    margin: 5px 0; /* Adjust link margins */
+  .navbar-links {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .navbar-links li {
+    flex: 0 0 33%; /* Adjust width to accommodate three links per row */
+    text-align: center; /* Center align items */
+    padding: 10px 0; /* Add padding for spacing */
+  }
+}
+
+/* For landscape mode */
+@media (max-width: 768px) and (orientation: landscape) {
+  .navbar-links {
+    width: 100%
+  }
+  .navbar-links li {
+    flex: 0 0 50%; /* Adjust width to accommodate two links per row */
   }
 }

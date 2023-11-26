@@ -1,0 +1,9 @@
+.contents {
+    margin: 20px 50px;
+    text-align: justify;
+    display: flex;
+    justify-content: center; /* Horizontally centers items */
+    align-items: center; /* Vertically centers items */
+    height: 200px; /* Just for demonstration, adjust as needed */
+    border: 2px solid #cccccc; /* Border for visualization */
+  }
