@@ -4,7 +4,7 @@ import "./Reviews.css";
 const Reviews = () => {
   return (
     <div>
-      <div className="reviews">
+      <div className="Reviews">
         <a href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/">
           Рецензия кандидата философских наук, шекспироведа Б.Н. Гайдина на
           сайте "Русский Шекспир"

@@ -1,4 +1,4 @@
-.authors {
+.Authors {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,12 +8,12 @@
     text-align: justify;
 }
 
-.elia {
+.Elia {
     height: 360px;
     width: 275px;
 }
 
-.stas {
+.Stas {
     height: 360px;
     width: 500px; 
 }

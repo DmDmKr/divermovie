@@ -4,8 +4,8 @@ import './NavBar.css';
 
 const NavBar = () => {
   return (
-    <nav className="navbar">
-      <ul className="navbar-links">
+    <nav className="Navbar">
+      <ul className="Navbar-links">
         <li>
           <Link to="/about">О фильме</Link>
         </li>
