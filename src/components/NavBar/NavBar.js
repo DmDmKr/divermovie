@@ -16,7 +16,7 @@ const NavBar = () => {
           <Link to="/reviews">Критика</Link>
         </li>
         <li>
-          <Link to="/photos">Фото</Link>
+          <Link to="/image-gallery">Фото</Link>
         </li>
         <li>
           <Link to="/movie">Видео</Link>

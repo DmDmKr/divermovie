@@ -1,0 +1,20 @@
+.ImageGallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 200px;
+}
+
+.ImageGallery img {
+    overflow: scroll;
+}
+
+@media screen and (max-width: 768px) {
+    .ImageGallery {
+        margin: 2%;
+        gap: 2%;
+    }
+}
