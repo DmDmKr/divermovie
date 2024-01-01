@@ -5,6 +5,7 @@ import Authors from "./components/Authors/Authors.js";
 import About from "./components/About/About.js";
 import Reviews from "./components/Reviews/Reviews.js";
 import ImageGallery from "./components/ImageGallery/ImageGallery.js";
+import Movie from "./components/Movie/Movie.js";
 
 const App = () => {
 
@@ -16,7 +17,7 @@ const App = () => {
         <Route path="/authors" element={<Authors />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/image-gallery" element={<ImageGallery />} />
-        {/* Add more Route components for other routes */}
+        <Route path="/movie" element={<Movie />}/>
       </Routes>
     </div>
   );
