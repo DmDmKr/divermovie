@@ -11,3 +11,10 @@
 h1 {
     font-size: 20px;
 }
+
+@media (orientation: portrait) {
+    .Reviews {
+      margin: 10px;
+      text-align: center;
+    }
+  }

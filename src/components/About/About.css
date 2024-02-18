@@ -6,3 +6,10 @@
     align-items: center;
     height: auto; 
   }
+
+  @media (orientation: portrait) {
+    .About {
+      margin: 10px;
+      text-align: center;
+    }
+  }

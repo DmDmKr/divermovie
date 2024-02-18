@@ -8,7 +8,6 @@
   gap: 200px;
   height: 60px;
   font-size: 24px;
-  /* font-weight: 500; */
 }
 
 .Navbar a {
@@ -69,9 +68,12 @@
 /* Media queries for responsiveness */
 @media (orientation: portrait) {
   .Navbar {
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
-    gap: 1rem;
+  }
+
+  .Navbar-links {
+    gap: 0px;
   }
 
   .Navbar a,
