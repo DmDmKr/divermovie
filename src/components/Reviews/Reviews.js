@@ -5,7 +5,7 @@ const Reviews = () => {
   return (
     <div>
       <div className="Reviews">
-        <a href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/">
+        <a href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/" target="_blank" rel="noopener noreferrer">
           Рецензия кандидата философских наук, шекспироведа Б.Н. Гайдина на
           сайте "Русский Шекспир"
         </a>
@@ -19,9 +19,9 @@ const Reviews = () => {
           простором смерти. ...поставлено и сыграно совершенно оригинально, я не
           заметил никаких подражаний."
         </p>
-        <p>
+        <h1>
             <b>Отзывы интернет-зрителей:</b>
-        </p>
+        </h1>
         <p>
             <b>@user-mj2up5iv8v</b>: ....не смогла оторваться. Завораживает.Необъяснимо.Наверное,это искусство....Спасибо.
         </p>

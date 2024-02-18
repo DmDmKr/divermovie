@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar.js";
 import Authors from "./components/Authors/Authors.js";
 import About from "./components/About/About.js";
@@ -13,6 +13,7 @@ const App = () => {
     <div>
       <NavBar />
       <Routes>
+      <Route path="*" element={<Navigate to="/about" />} />
         <Route path="/about" element={<About />} />
         <Route path="/authors" element={<Authors />} />
         <Route path="/reviews" element={<Reviews />} />

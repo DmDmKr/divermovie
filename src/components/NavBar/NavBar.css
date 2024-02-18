@@ -1,13 +1,14 @@
-/* Base styles for Navbar */
 .Navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2c3e50;
+  background-color: #07434a;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   flex-wrap: wrap;
   gap: 200px;
   height: 60px;
+  font-size: 24px;
+  /* font-weight: 500; */
 }
 
 .Navbar a {
@@ -15,7 +16,6 @@
   text-align: center;
   color: #ecf0f1;
   margin: 0 300px;
-  /* Adjust spacing for links */
   transition: color 0.3s;
 }
 
@@ -56,16 +56,13 @@
     gap: 2rem;
     flex-wrap: wrap;
     height: auto;
-    /* Enable horizontal scrolling if needed */
   }
 
   .Navbar a,
   .Navbar-links li {
     flex: 0 0 auto;
-    /* Resetting flex properties for landscape mode */
     width: auto;
     margin: 0 20px;
-    /* Adjust margin for links */
   }
 }
 
@@ -80,9 +77,7 @@
   .Navbar a,
   .Navbar-links li {
     flex: 0 0 auto;
-    /* Resetting flex properties for landscape mode */
     width: auto;
     margin: 0 10px;
-    /* Adjust margin for links */
   }
 }
