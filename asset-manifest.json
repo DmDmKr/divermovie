@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/divermovie/static/css/main.59fbcc28.css",
+    "main.css": "/divermovie/static/css/main.eb9212c8.css",
     "main.js": "/divermovie/static/js/main.4aef808e.js",
     "static/media/image5.jpg": "/divermovie/static/media/image5.e23ab613e9f89a849f70.jpg",
     "static/media/image3.jpg": "/divermovie/static/media/image3.006092929f67736c6eca.jpg",
@@ -15,11 +15,11 @@
     "static/media/concept_photo.jpg": "/divermovie/static/media/concept_photo.99b66906179562d97251.jpg",
     "static/media/elvira.jpg": "/divermovie/static/media/elvira.ac91e97fbd85b02b4947.jpg",
     "index.html": "/divermovie/index.html",
-    "main.59fbcc28.css.map": "/divermovie/static/css/main.59fbcc28.css.map",
+    "main.eb9212c8.css.map": "/divermovie/static/css/main.eb9212c8.css.map",
     "main.4aef808e.js.map": "/divermovie/static/js/main.4aef808e.js.map"
   },
   "entrypoints": [
-    "static/css/main.59fbcc28.css",
+    "static/css/main.eb9212c8.css",
     "static/js/main.4aef808e.js"
   ]
 }
