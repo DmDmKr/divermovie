@@ -1,8 +1,8 @@
 import React from "react";
-import './ImageGallery.css'
+import "./ImageGallery.css";
 
-const images = require.context('../../assets/images', true);
-const imageList = images.keys().map(image => images(image));
+const images = require.context("../../assets/images", true);
+const imageList = images.keys().map((image) => images(image));
 
 const ImageGallery = () => {
   return (
@@ -14,4 +14,4 @@ const ImageGallery = () => {
   );
 };
 
-export default ImageGallery
+export default ImageGallery;

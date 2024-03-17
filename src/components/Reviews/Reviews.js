@@ -5,13 +5,17 @@ const Reviews = () => {
   return (
     <div>
       <div className="Reviews">
-        <a href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Рецензия кандидата философских наук, шекспироведа Б.Н. Гайдина на
           сайте "Русский Шекспир"
         </a>
         <p>
-          Доктор искусствоведения, специалист по творчеству У. Шекспира
-          А.В. Бартошевич:​ "Очень много точного, именно что гамлетовского.​
+          Доктор искусствоведения, специалист по творчеству У. Шекспира А.В.
+          Бартошевич:​ "Очень много точного, именно что гамлетовского.​
           Лихорадочный задыхающийся бег, который невозможно остановить и
           обрывающийся только смертью... Тесные пространства подвалов, лестниц,
           переходов среди развалин, по которым блуждает в полубреду​
@@ -20,22 +24,26 @@ const Reviews = () => {
           заметил никаких подражаний."
         </p>
         <h1>
-            <b>Отзывы интернет-зрителей:</b>
+          <b>Отзывы интернет-зрителей:</b>
         </h1>
         <p>
-            <b>@user-mj2up5iv8v</b>: ....не смогла оторваться. Завораживает.Необъяснимо.Наверное,это искусство....Спасибо.
+          <b>@user-mj2up5iv8v</b>: ....не смогла оторваться.
+          Завораживает.Необъяснимо.Наверное,это искусство....Спасибо.
         </p>
         <p>
-            <b>@A.Williams-mi2gh</b>: Spectacular acting. Thank you!♥
+          <b>@A.Williams-mi2gh</b>: Spectacular acting. Thank you!♥
         </p>
         <p>
-            <b>@AnnW6c</b>: The highly-sensitive actor seems to be a real Hamlet. Nice going! I’d like to see on a big screen.
+          <b>@AnnW6c</b>: The highly-sensitive actor seems to be a real Hamlet.
+          Nice going! I’d like to see on a big screen.
         </p>
         <p>
-            <b>@user-kb8kz6qy3h</b>: Здорово! Талантливо! Спасибо
+          <b>@user-kb8kz6qy3h</b>: Здорово! Талантливо! Спасибо
         </p>
         <p>
-            <b>@user-zd6py2xm5n</b>: Сложный фильм, который не стоит смотреть с наскока. Возможно, даже не с одного подхода. Захотелось перечитать источник.
+          <b>@user-zd6py2xm5n</b>: Сложный фильм, который не стоит смотреть с
+          наскока. Возможно, даже не с одного подхода. Захотелось перечитать
+          источник.
         </p>
       </div>
     </div>

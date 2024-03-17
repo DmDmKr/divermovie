@@ -1,22 +1,22 @@
 .ImageGallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin: 50px 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 200px;
 }
 
 .ImageGallery img {
-    overflow: scroll;
-    height: auto;
-    width: auto;
+  overflow: scroll;
+  height: auto;
+  width: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .ImageGallery {
-        margin: 2%;
-        gap: 2%;
-    }
+  .ImageGallery {
+    margin: 2%;
+    gap: 2%;
+  }
 }
