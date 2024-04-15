@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/divermovie/static/css/main.a6bc2042.css",
-    "main.js": "/divermovie/static/js/main.0a6c7325.js",
-    "static/media/image5.jpg": "/divermovie/static/media/image5.e23ab613e9f89a849f70.jpg",
-    "static/media/image3.jpg": "/divermovie/static/media/image3.006092929f67736c6eca.jpg",
-    "static/media/image6.jpg": "/divermovie/static/media/image6.dcdb36d0262cd76ddebc.jpg",
-    "static/media/image1.jpg": "/divermovie/static/media/image1.9cfb92e6d00da0d7f38c.jpg",
-    "static/media/image7.jpg": "/divermovie/static/media/image7.76878ecec1254abe541b.jpg",
-    "static/media/image2.jpg": "/divermovie/static/media/image2.12b1e170d9aa0217d2bd.jpg",
-    "static/media/image4.jpg": "/divermovie/static/media/image4.728b54fd8fe86a3625b0.jpg",
-    "static/media/image8.jpg": "/divermovie/static/media/image8.f3bd8d81cd3c4b5edd5f.jpg",
-    "static/media/image9.jpg": "/divermovie/static/media/image9.18840c9422b5746d1eb5.jpg",
-    "static/media/stas2.jpg": "/divermovie/static/media/stas2.5de91c4d57e0b6521753.jpg",
-    "static/media/concept_photo.jpg": "/divermovie/static/media/concept_photo.99b66906179562d97251.jpg",
-    "static/media/elvira.jpg": "/divermovie/static/media/elvira.ac91e97fbd85b02b4947.jpg",
-    "index.html": "/divermovie/index.html",
-    "main.a6bc2042.css.map": "/divermovie/static/css/main.a6bc2042.css.map",
-    "main.0a6c7325.js.map": "/divermovie/static/js/main.0a6c7325.js.map"
+    "main.css": "/static/css/main.a6bc2042.css",
+    "main.js": "/static/js/main.937630a1.js",
+    "static/media/image5.jpg": "/static/media/image5.e23ab613e9f89a849f70.jpg",
+    "static/media/image3.jpg": "/static/media/image3.006092929f67736c6eca.jpg",
+    "static/media/image6.jpg": "/static/media/image6.dcdb36d0262cd76ddebc.jpg",
+    "static/media/image1.jpg": "/static/media/image1.9cfb92e6d00da0d7f38c.jpg",
+    "static/media/image7.jpg": "/static/media/image7.76878ecec1254abe541b.jpg",
+    "static/media/image2.jpg": "/static/media/image2.12b1e170d9aa0217d2bd.jpg",
+    "static/media/image4.jpg": "/static/media/image4.728b54fd8fe86a3625b0.jpg",
+    "static/media/image8.jpg": "/static/media/image8.f3bd8d81cd3c4b5edd5f.jpg",
+    "static/media/image9.jpg": "/static/media/image9.18840c9422b5746d1eb5.jpg",
+    "static/media/stas2.jpg": "/static/media/stas2.5de91c4d57e0b6521753.jpg",
+    "static/media/concept_photo.jpg": "/static/media/concept_photo.99b66906179562d97251.jpg",
+    "static/media/elvira.jpg": "/static/media/elvira.ac91e97fbd85b02b4947.jpg",
+    "index.html": "/index.html",
+    "main.a6bc2042.css.map": "/static/css/main.a6bc2042.css.map",
+    "main.937630a1.js.map": "/static/js/main.937630a1.js.map"
   },
   "entrypoints": [
     "static/css/main.a6bc2042.css",
-    "static/js/main.0a6c7325.js"
+    "static/js/main.937630a1.js"
   ]
 }
