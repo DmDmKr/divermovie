@@ -5,13 +5,14 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin: 50px 200px;
+  margin: 15px 200px;
 }
 
 .ImageGallery img {
   overflow: scroll;
   height: auto;
   width: auto;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {

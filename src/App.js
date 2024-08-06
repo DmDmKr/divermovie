@@ -5,7 +5,7 @@ import Authors from "./components/Authors/Authors.js";
 import About from "./components/About/About.js";
 import Reviews from "./components/Reviews/Reviews.js";
 import ImageGallery from "./components/ImageGallery/ImageGallery.js";
-import Movie from "./components/Movie/Movie.js";
+import Movie from "./components/Videos/Videos.js";
 import Footer from "./components/Footer/Footer.js";
 
 const App = () => {
@@ -13,12 +13,12 @@ const App = () => {
     <div>
       <NavBar />
       <Routes>
-        <Route path="*" element={<Navigate to="/about" />} />
+        <Route path="*" element={<Navigate to="/authors" />} />
         <Route path="/about" element={<About />} />
         <Route path="/authors" element={<Authors />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/image-gallery" element={<ImageGallery />} />
-        <Route path="/movie" element={<Movie />} />
+        <Route path="/videos" element={<Movie />} />
       </Routes>
       <Footer />
     </div>

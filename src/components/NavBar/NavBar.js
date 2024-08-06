@@ -1,16 +1,16 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./NavBar.css";
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './NavBar.css'
 
 const NavBar = () => {
   return (
     <nav className="Navbar">
       <ul className="Navbar-links">
         <li>
-          <Link to="/about">О фильме</Link>
+          <Link to="/authors">Авторы</Link>
         </li>
         <li>
-          <Link to="/authors">Авторы</Link>
+          <Link to="/about">О фильмах</Link>
         </li>
         <li>
           <Link to="/reviews">Критика</Link>
@@ -19,11 +19,11 @@ const NavBar = () => {
           <Link to="/image-gallery">Фото</Link>
         </li>
         <li>
-          <Link to="/movie">Видео</Link>
+          <Link to="/videos">Видео</Link>
         </li>
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar

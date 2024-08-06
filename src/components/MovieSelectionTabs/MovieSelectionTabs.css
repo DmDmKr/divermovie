@@ -1,0 +1,18 @@
+.MovieSelectionTabsLinks {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  gap: 50px;
+  align-self: center;
+}
+
+.MovieSelectionTabsLinks li a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  background-color: #07434a;
+  transition: background-color 0.3s, border-color 0.3s;
+}
