@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin: 15px 200px 120px;
+  margin: 15px 200px;
   text-align: justify;
 }
 
@@ -12,9 +12,17 @@ h1 {
   font-size: 20px;
 }
 
+.MovieSelectionTabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
 @media (orientation: portrait) {
   .Reviews {
     margin: 10px;
     text-align: center;
+    overflow: auto;
   }
 }

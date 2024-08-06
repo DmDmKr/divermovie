@@ -9,10 +9,12 @@ const Reviews = () => {
   const movie = searchParams.get('movie')
 
   return (
-    <div className="Reviews">
-      <MovieSelectionTabs />
+    <div>
+      <div className="MovieSelectionTabs">
+        <MovieSelectionTabs />
+      </div>
       {(movie === diverMovieName || !movie) && (
-        <div>
+        <div className="Reviews">
           <a
             href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/"
             target="_blank"

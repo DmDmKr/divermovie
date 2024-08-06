@@ -48,7 +48,6 @@
   color: #ff4500;
 }
 
-/* Media queries for responsiveness */
 @media (orientation: landscape) {
   .Navbar {
     overflow-x: auto;
@@ -65,7 +64,6 @@
   }
 }
 
-/* Media queries for responsiveness */
 @media (orientation: portrait) {
   .Navbar {
     flex-direction: row;

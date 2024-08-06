@@ -1,12 +1,12 @@
-import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import NavBar from "./components/NavBar/NavBar.js";
-import Authors from "./components/Authors/Authors.js";
-import About from "./components/About/About.js";
-import Reviews from "./components/Reviews/Reviews.js";
-import ImageGallery from "./components/ImageGallery/ImageGallery.js";
-import Movie from "./components/Videos/Videos.js";
-import Footer from "./components/Footer/Footer.js";
+import React from 'react'
+import { Routes, Route, Navigate } from 'react-router-dom'
+import NavBar from './components/NavBar/NavBar.js'
+import Authors from './components/Authors/Authors.js'
+import About from './components/About/About.js'
+import Reviews from './components/Reviews/Reviews.js'
+import ImageGallery from './components/ImageGallery/ImageGallery.js'
+import Movie from './components/Videos/Videos.js'
+import Footer from './components/Footer/Footer.js'
 
 const App = () => {
   return (
@@ -22,7 +22,7 @@ const App = () => {
       </Routes>
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

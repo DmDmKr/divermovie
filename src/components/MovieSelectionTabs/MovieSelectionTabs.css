@@ -3,7 +3,7 @@
   list-style-type: none;
   flex-direction: row;
   gap: 50px;
-  align-self: center;
+  margin-block-start: 15px;
 }
 
 .MovieSelectionTabsLinks li a {
@@ -15,4 +15,15 @@
   border: 1px solid #ccc;
   background-color: #07434a;
   transition: background-color 0.3s, border-color 0.3s;
+}
+
+.MovieSelectionTabsLinks li a:hover {
+  color: #ff4500;
+}
+
+@media (orientation: portrait) {
+  .MovieSelectionTabsLinks {
+    gap: 1rem;
+    padding-left: 0;
+  }
 }
