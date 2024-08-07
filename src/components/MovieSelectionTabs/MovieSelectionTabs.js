@@ -8,7 +8,7 @@ const MovieSelectionTabs = () => {
 
   return (
     <div>
-      <ul className="MovieSelectionTabsLinks">
+      <ul className="MovieSelectionTabs">
         <li>
           <Link to={`${currentPath}?movie=diver`}>Ныряльщик</Link>
         </li>

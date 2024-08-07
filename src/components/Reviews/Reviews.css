@@ -12,14 +12,8 @@ h1 {
   font-size: 20px;
 }
 
-.MovieSelectionTabs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-}
-
 .ReviewsWrapper {
+  margin-top: 15px;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -32,7 +26,7 @@ h1 {
     overflow: auto;
   }
 
-  .MovieSelectionTabs {
-    margin-top: 10px;
+  .ReviewsWrapper {
+    margin: 10px;
   }
 }

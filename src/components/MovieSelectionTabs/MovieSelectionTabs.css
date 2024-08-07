@@ -1,13 +1,15 @@
-.MovieSelectionTabsLinks {
+.MovieSelectionTabs {
   display: flex;
   list-style-type: none;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   gap: 50px;
   margin-block-start: 15px;
   margin-block-end: 15px;
 }
 
-.MovieSelectionTabsLinks li a {
+.MovieSelectionTabs li a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
@@ -19,12 +21,13 @@
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-.MovieSelectionTabsLinks li a:hover {
+.MovieSelectionTabs li a:hover {
   color: #ff4500;
 }
 
 @media (orientation: portrait) {
-  .MovieSelectionTabsLinks {
+  .MovieSelectionTabs {
+    margin: 15px;
     gap: 1rem;
     padding-left: 0;
   }

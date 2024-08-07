@@ -3,7 +3,7 @@ import './About.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import diverConceptPhoto from '../../assets/diver_concept_photo.jpg'
 import drunkNotesConceptPhoto from '../../assets/drunk_notes_concept_photo.jpg'
-import { diverMovieName, drunkNotesMovieName } from '../../utils/name_constants'
+import { DIVER_MOVIE_NAME } from '../../utils/name_constants'
 import { useSearchParams } from 'react-router-dom'
 
 const About = () => {
@@ -13,7 +13,8 @@ const About = () => {
   return (
     <div className="About">
       <MovieSelectionTabs />
-      {movie === diverMovieName || !movie ? (
+
+      {movie === DIVER_MOVIE_NAME || !movie ? (
         <>
           <p>
             Это кино на основе "Трагической истории о Гамлете, принце Датском" Уильяма Шекспира. В

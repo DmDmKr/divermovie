@@ -1,7 +1,7 @@
 import React from 'react'
 import './Reviews.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
-import { diverMovieName, drunkNotesMovieName } from '../../utils/name_constants'
+import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
 import { useSearchParams } from 'react-router-dom'
 
 const Reviews = () => {
@@ -10,10 +10,8 @@ const Reviews = () => {
 
   return (
     <div className="ReviewsWrapper">
-      <div className="MovieSelectionTabs">
-        <MovieSelectionTabs />
-      </div>
-      {(movie === diverMovieName || !movie) && (
+      <MovieSelectionTabs />
+      {(movie === DIVER_MOVIE_NAME || !movie) && (
         <div className="Reviews">
           <a
             href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/"
@@ -54,7 +52,7 @@ const Reviews = () => {
           </p>
         </div>
       )}
-      {movie === drunkNotesMovieName && (
+      {movie === DRUNK_NOTES_MOVIE_NAME && (
         <div className="Reviews">
           <h1>
             <b>Отзывы зрителей:</b>

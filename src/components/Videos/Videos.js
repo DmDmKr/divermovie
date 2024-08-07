@@ -1,7 +1,7 @@
 import React from 'react'
 import YouTube from 'react-youtube'
 import './Videos.css'
-import { diverMovieName, drunkNotesMovieName } from '../../utils/name_constants'
+import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
 import { useSearchParams } from 'react-router-dom'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 
@@ -23,22 +23,24 @@ const Videos = () => {
   }
 
   return (
-    <div className="Videos">
+    <div className="VideosWrapper">
       <MovieSelectionTabs />
-      {(movie === diverMovieName || !movie) && (
-        <>
-          <h2>Фильм "Ныряльщик" (русская версия):</h2>
-          <YouTube videoId="auCTYCmSrw0" opts={options} onReady={onReady}></YouTube>
-          <h2>"The Diver" movie (with English subtitles):</h2>
-          <YouTube videoId="dktfmkmbNEo" opts={options} onReady={onReady}></YouTube>
-        </>
-      )}
-      {movie === drunkNotesMovieName && (
-        <>
-          <h2>Фильм "Записки по пьяни" (русская версия):</h2>
-          <YouTube videoId="L2lkHGfX8JI" opts={options} onReady={onReady}></YouTube>
-        </>
-      )}
+      <div className="Videos">
+        {(movie === DIVER_MOVIE_NAME || !movie) && (
+          <>
+            <h2>Фильм "Ныряльщик" (русская версия):</h2>
+            <YouTube videoId="auCTYCmSrw0" opts={options} onReady={onReady}></YouTube>
+            <h2>"The Diver" movie (with English subtitles):</h2>
+            <YouTube videoId="dktfmkmbNEo" opts={options} onReady={onReady}></YouTube>
+          </>
+        )}
+        {movie === DRUNK_NOTES_MOVIE_NAME && (
+          <>
+            <h2>Фильм "Записки по пьяни" (русская версия):</h2>
+            <YouTube videoId="L2lkHGfX8JI" opts={options} onReady={onReady}></YouTube>
+          </>
+        )}
+      </div>
     </div>
   )
 }

@@ -1,2 +1,2 @@
-export const diverMovieName = 'diver'
-export const drunkNotesMovieName = 'drunk_notes'
+export const DIVER_MOVIE_NAME = 'diver'
+export const DRUNK_NOTES_MOVIE_NAME = 'drunk_notes'
