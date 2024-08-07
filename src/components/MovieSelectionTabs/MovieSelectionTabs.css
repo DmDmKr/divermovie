@@ -4,6 +4,7 @@
   flex-direction: row;
   gap: 50px;
   margin-block-start: 15px;
+  margin-block-end: 15px;
 }
 
 .MovieSelectionTabsLinks li a {

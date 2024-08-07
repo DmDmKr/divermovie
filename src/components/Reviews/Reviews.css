@@ -25,4 +25,8 @@ h1 {
     text-align: center;
     overflow: auto;
   }
+
+  .MovieSelectionTabs {
+    margin-top: 10px;
+  }
 }

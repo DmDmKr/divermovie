@@ -23,6 +23,7 @@
   .About img {
     margin-top: 15px;
     height: 300px;
+    min-width: auto;
     max-width: 400px;
   }
 }

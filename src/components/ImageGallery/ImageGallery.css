@@ -17,7 +17,7 @@
 
 @media screen and (max-width: 768px) {
   .ImageGallery {
-    margin: 2%;
-    gap: 2%;
+    margin: 10px;
+    gap: 10px;
   }
 }
