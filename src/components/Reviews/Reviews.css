@@ -19,6 +19,12 @@ h1 {
   margin-top: 15px;
 }
 
+.ReviewsWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 @media (orientation: portrait) {
   .Reviews {
     margin: 10px;

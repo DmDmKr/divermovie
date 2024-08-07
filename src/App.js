@@ -7,10 +7,11 @@ import Reviews from './components/Reviews/Reviews.js'
 import ImageGallery from './components/ImageGallery/ImageGallery.js'
 import Movie from './components/Videos/Videos.js'
 import Footer from './components/Footer/Footer.js'
+import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <div className="AppWrapper">
       <NavBar />
       <Routes>
         <Route path="*" element={<Navigate to="/authors" />} />

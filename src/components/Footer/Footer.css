@@ -3,4 +3,5 @@
   text-align: center;
   font-size: 12px;
   margin-bottom: 10px;
+  align-self: flex-end;
 }

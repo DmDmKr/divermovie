@@ -9,7 +9,7 @@ const Reviews = () => {
   const movie = searchParams.get('movie')
 
   return (
-    <div>
+    <div className="ReviewsWrapper">
       <div className="MovieSelectionTabs">
         <MovieSelectionTabs />
       </div>
