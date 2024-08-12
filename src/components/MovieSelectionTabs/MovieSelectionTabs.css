@@ -9,19 +9,29 @@
   margin-block-end: 15px;
 }
 
-.MovieSelectionTabs li a {
+.MovieSelectionTabs button {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: #07434a;
+}
+
+.MovieSelectionTabs button.selected {
+  background-color: #0d7580;
+}
+
+.MovieSelectionTabs button a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
   color: white;
   font-size: 20px;
-  border: 1px solid #ccc;
-  background-color: #07434a;
+  border: 1px solid #0f92a0;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-.MovieSelectionTabs li a:hover {
+.MovieSelectionTabs button a:hover {
   color: #ff4500;
 }
 
