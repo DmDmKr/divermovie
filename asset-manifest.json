@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d00ac0a.css",
-    "main.js": "/static/js/main.5ebb7f51.js",
+    "main.css": "/static/css/main.de148f22.css",
+    "main.js": "/static/js/main.331ee491.js",
     "static/media/image3.jpg": "/static/media/image3.006092929f67736c6eca.jpg",
     "static/media/image2.jpg": "/static/media/image2.12b1e170d9aa0217d2bd.jpg",
     "static/media/image5.jpg": "/static/media/image5.e23ab613e9f89a849f70.jpg",
@@ -16,11 +16,11 @@
     "static/media/diver_concept_photo.jpg": "/static/media/diver_concept_photo.99b66906179562d97251.jpg",
     "static/media/elvira.jpg": "/static/media/elvira.ac91e97fbd85b02b4947.jpg",
     "index.html": "/index.html",
-    "main.7d00ac0a.css.map": "/static/css/main.7d00ac0a.css.map",
-    "main.5ebb7f51.js.map": "/static/js/main.5ebb7f51.js.map"
+    "main.de148f22.css.map": "/static/css/main.de148f22.css.map",
+    "main.331ee491.js.map": "/static/js/main.331ee491.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d00ac0a.css",
-    "static/js/main.5ebb7f51.js"
+    "static/css/main.de148f22.css",
+    "static/js/main.331ee491.js"
   ]
 }
