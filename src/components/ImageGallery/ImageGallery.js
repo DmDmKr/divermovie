@@ -7,20 +7,24 @@ import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 const ImageGallery = () => {
   const [searchParams] = useSearchParams()
   const movie = searchParams.get('movie')
-  let images
-  if (movie === DIVER_MOVIE_NAME || !movie) {
-    images = require.context('../../assets/images/diver', true)
+
+  const imagePaths = {
+    [DIVER_MOVIE_NAME]: require.context('../../assets/images/diver', true),
+    [DRUNK_NOTES_MOVIE_NAME]: require.context('../../assets/images/drunkNotes', true)
   }
-  if (movie === DRUNK_NOTES_MOVIE_NAME) {
-    images = require.context('../../assets/images/drunkNotes', true)
-  }
+
+  const images = imagePaths[movie] || imagePaths[DIVER_MOVIE_NAME]
   const imageList = images.keys().map(image => images(image))
+
+  if (!imageList.length) {
+    return <p>No images available for this movie.</p>
+  }
 
   return (
     <div className="ImageGallery">
       <MovieSelectionTabs />
       {imageList.map((image, index) => (
-        <img key={index} src={image} alt={`${index}`} />
+        <img key={index} src={image} alt={`Scene from ${movie} #${index + 1}`} loading="lazy" />
       ))}
     </div>
   )

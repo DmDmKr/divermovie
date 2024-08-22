@@ -9,7 +9,7 @@
 }
 
 .ImageGallery img {
-  overflow: scroll;
+  max-width: 100%;
   height: auto;
   width: auto;
   margin-top: 0;
