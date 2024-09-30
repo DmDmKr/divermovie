@@ -24,7 +24,14 @@ const ImageGallery = () => {
     <div className="ImageGallery">
       <MovieSelectionTabs />
       {imageList.map((image, index) => (
-        <img key={index} src={image} alt={`Scene from ${movie} #${index + 1}`} loading="lazy" />
+        <img
+          key={index}
+          src={image}
+          alt={`Сцена из фильма ${
+            movie === DRUNK_NOTES_MOVIE_NAME ? 'Записки по-пьяни' : 'Ныряльщик'
+          } #${index + 1}`}
+          loading="lazy"
+        />
       ))}
     </div>
   )
