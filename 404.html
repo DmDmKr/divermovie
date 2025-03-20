@@ -1,80 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with only a query string and hash fragment,
+      // e.g. https://www.foo.tld/one/two?a=b&c=d#qwe, becomes
+      // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
+      // Note: this 404.html file must be at least 512 bytes for it to work
+      // with Internet Explorer (it is currently > 512 bytes)
 
-    <!-- Russian Meta Description -->
-    <meta
-      name="description"
-      lang="ru"
-      content="Фильмы Эльвиры Крупиной и Станислава Рядинского — артхаусное кино, записки по пьяни, ныряльщик и другие авторские проекты."
-    />
+      // If you're creating a Project Pages site and NOT using a custom domain,
+      // then set pathSegmentsToKeep to 1 (enterprise users may need to set it to > 1).
+      // This way the code will only replace the route part of the path, and not
+      // the real directory in which the app resides, for example:
+      // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
+      // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
+      // Otherwise, leave pathSegmentsToKeep as 0.
+      var pathSegmentsToKeep = 0
 
-    <!-- English Meta Description -->
-    <meta
-      name="description"
-      lang="en"
-      content="Films by Elvira Krupina and Stanislav Ryadinskiy — arthouse cinema, Notes on Drunkenness, The Diver, and other independent projects."
-    />
-
-    <!-- Keywords Meta Tag -->
-    <meta
-      name="keywords"
-      lang="ru"
-      content="Эльвира Крупина, Станислав Рядинский, фильмы, артхаус, фильмы Эльвиры Крупиной, фильмы Станислава Рядинского, записки по пьяни, ныряльщик"
-    />
-    <meta
-      name="keywords"
-      lang="en"
-      content="Elvira Krupina, Stanislav Ryadinskiy, films, arthouse cinema, Elvira Krupina films, Stanislav Ryadinskiy films, Notes on Drunkenness, The Diver"
-    />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://ryadinsky-krupina-movies.ru" />
-
-    <!-- Open Graph for Social Sharing -->
-    <meta property="og:title" content="Фильмы С. Рядинского и Э. Крупиной" />
-    <meta
-      property="og:description"
-      content="Авторские артхаусные фильмы Эльвиры Крупиной и Станислава Рядинского. Смотрите Записки по Пьяни и Ныряльщик онлайн."
-    />
-    <meta property="og:image" content="%PUBLIC_URL%/movie_clapper.ico" />
-    <meta property="og:url" content="https://ryadinsky-krupina-movies.ru/" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Фильмы С. Рядинского и Э. Крупиной" />
-    <meta
-      name="twitter:description"
-      content="Фильмы Эльвиры Крупиной и Станислава Рядинского — артхаусное кино, записки по пьяни, ныряльщик и другие авторские проекты."
-    />
-    <meta name="twitter:image" content="%PUBLIC_URL%/movie_clapper.ico" />
-
-    <!-- Favicons and Manifest -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="icon" href="%PUBLIC_URL%/movie_clapper.ico" type="image/x-icon" />
-
-    <!-- Title with Keywords -->
-    <title>
-      Фильмы Эльвиры Крупиной и Станислава Рядинского | Films by E. Krupina and S. Ryadinskiy
-    </title>
+      var l = window.location
+      l.replace(
+        l.protocol +
+          '//' +
+          l.hostname +
+          (l.port ? ':' + l.port : '') +
+          l.pathname
+            .split('/')
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join('/') +
+          '/?/' +
+          l.pathname
+            .slice(1)
+            .split('/')
+            .slice(pathSegmentsToKeep)
+            .join('/')
+            .replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      )
+    </script>
   </head>
-
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <body></body>
 </html>
