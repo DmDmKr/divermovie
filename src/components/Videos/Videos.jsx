@@ -1,4 +1,3 @@
-import React from 'react'
 import YouTube from 'react-youtube'
 import './Videos.css'
 import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'

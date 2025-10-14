@@ -1,4 +1,3 @@
-import React from 'react'
 import './Authors.css'
 import elvira from '../../assets/authors/elvira.jpg'
 import stas from '../../assets/authors/stas2.jpg'
