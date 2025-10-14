@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
 import './MovieSelectionTabs.css'
 
 const MovieSelectionTabs = () => {
@@ -15,14 +16,14 @@ const MovieSelectionTabs = () => {
           onClick={() => setSelectedButtonId('diverButton')}
           className={selectedButtonId === 'diverButton' ? 'selected' : ''}
         >
-          <Link to={`${currentPath}?movie=diver`}>Ныряльщик</Link>
+          <Link to={`${currentPath}?movie=${DIVER_MOVIE_NAME}`}>Ныряльщик</Link>
         </button>
         <button
           id="drunkNotesButton"
           onClick={() => setSelectedButtonId('drunkNotesButton')}
           className={selectedButtonId === 'drunkNotesButton' ? 'selected' : ''}
         >
-          <Link to={`${currentPath}?movie=drunk_notes`}>Записки по пьяни</Link>
+          <Link to={`${currentPath}?movie=${DRUNK_NOTES_MOVIE_NAME}`}>Записки по пьяни</Link>
         </button>
       </ul>
     </div>
