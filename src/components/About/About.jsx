@@ -1,4 +1,3 @@
-import React from 'react'
 import './About.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import diverConceptPhoto from '../../assets/diver_concept_photo.jpg'

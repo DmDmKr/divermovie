@@ -1,4 +1,3 @@
-import React from 'react'
 import './Reviews.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
@@ -33,8 +32,8 @@ const Reviews = () => {
             <b>Отзывы интернет-зрителей:</b>
           </h1>
           <p>
-            <b>@user-mj2up5iv8v</b>: ....не смогла оторваться. Завораживает.Необъяснимо.Наверное,это
-            искусство....Спасибо.
+            <b>@user-mj2up5iv8v</b>: ....не смогла оторваться. Завораживает. Необъяснимо. Наверное,
+            это искусство... Спасибо.
           </p>
           <p>
             <b>@A.Williams-mi2gh</b>: Spectacular acting. Thank you!♥

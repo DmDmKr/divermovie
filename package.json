@@ -2,51 +2,29 @@
   "homepage": "https://ryadinsky-krupina-movies.ru/",
   "name": "divermovie",
   "version": "0.1.0",
+  "type": "module",
   "private": false,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "http-proxy-middleware": "^2.0.9",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.0",
-    "react-scripts": "5.0.1",
     "react-youtube": "^10.1.0",
-    "web-vitals": "^2.1.4",
-    "webpack-dev-server": "^5.2.1"
+    "web-vitals": "^5.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "vite",
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
-  },
-  "overrides": {
-    "postcss": "^8.4.31",
-    "brace-expansion": "^2.0.2"
+    "@vitejs/plugin-react": "^5.0.4",
+    "gh-pages": "^6.1.1",
+    "vite": "^7.0.0"
   }
 }
