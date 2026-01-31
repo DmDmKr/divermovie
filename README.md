@@ -1,3 +1,16 @@
+# Diver Movie Portfolio
+
+A portfolio website showcasing independent film projects "Ныряльщик" (The Diver) and "Записки по пьяни" (Drunk Notes).
+
+**Live Site:** [https://ryadinsky-krupina-movies.ru/](https://ryadinsky-krupina-movies.ru/)
+
+## Tech Stack
+
+- **React 18** - UI library
+- **React Router v6** - Client-side routing
+- **Vite** - Build tool and dev server
+- **react-youtube** - YouTube player integration
+- **CSS** - Styling with flexbox and responsive design
 
 ## Available Scripts
 
@@ -18,3 +31,18 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+## Deployment
+
+This project uses GitHub Actions for automated deployment:
+
+1. Push changes to the `main` branch
+2. GitHub Actions workflow automatically builds the project
+3. Builds are deployed via `gh-pages` to GitHub Pages
+4. Custom domain configured via CNAME: `ryadinsky-krupina-movies.ru`
+
+Manual deployment:
+
+```bash
+npm run deploy
+```

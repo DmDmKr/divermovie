@@ -1,5 +1,5 @@
 import './ImageGallery.css'
-import { DIVER_MOVIE_NAME, movieTitles, movieToFolderMap } from '../../utils/name_constants'
+import { DIVER_MOVIE_NAME, movieTitles, movieToFolderMap } from '../../utils/nameConstants'
 import { useSearchParams } from 'react-router-dom'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 
