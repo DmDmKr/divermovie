@@ -1,37 +1,31 @@
 .MovieSelectionTabs {
   display: flex;
-  list-style-type: none;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
   gap: 50px;
-  margin-block-start: 15px;
-  margin-block-end: 15px;
+  margin: 15px 0;
 }
 
-.MovieSelectionTabs button {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  background-color: #07434a;
-}
-
-.MovieSelectionTabs button.selected {
-  background-color: #0d7580;
-}
-
-.MovieSelectionTabs button a {
+.MovieSelectionTabs a {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
   color: white;
   font-size: 20px;
+  background-color: #07434a;
   border: 1px solid #0f92a0;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.MovieSelectionTabs button a:hover {
+.MovieSelectionTabs a.selected {
+  background-color: #0d7580;
+}
+
+.MovieSelectionTabs a:hover {
   color: #ff4500;
 }
 

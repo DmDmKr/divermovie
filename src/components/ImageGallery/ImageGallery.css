@@ -1,3 +1,19 @@
+.ImageGalleryWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.ImageGallery-loading,
+.ImageGallery-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  font-size: 18px;
+  color: #555;
+}
+
 .ImageGallery {
   display: flex;
   flex-direction: row;

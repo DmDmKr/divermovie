@@ -1,31 +1,27 @@
-import { Link, useLocation } from 'react-router-dom'
-import { useState } from 'react'
+import { Link, useLocation, useSearchParams } from 'react-router-dom'
 import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
 import './MovieSelectionTabs.css'
 
 const MovieSelectionTabs = () => {
   const location = useLocation()
-  const [selectedButtonId, setSelectedButtonId] = useState('diverButton')
+  const [searchParams] = useSearchParams()
+  const movie = searchParams.get('movie')
   const currentPath = location.pathname
 
   return (
-    <div>
-      <ul className="MovieSelectionTabs">
-        <button
-          id="diverButton"
-          onClick={() => setSelectedButtonId('diverButton')}
-          className={selectedButtonId === 'diverButton' ? 'selected' : ''}
-        >
-          <Link to={`${currentPath}?movie=${DIVER_MOVIE_NAME}`}>Ныряльщик</Link>
-        </button>
-        <button
-          id="drunkNotesButton"
-          onClick={() => setSelectedButtonId('drunkNotesButton')}
-          className={selectedButtonId === 'drunkNotesButton' ? 'selected' : ''}
-        >
-          <Link to={`${currentPath}?movie=${DRUNK_NOTES_MOVIE_NAME}`}>Записки по пьяни</Link>
-        </button>
-      </ul>
+    <div className="MovieSelectionTabs">
+      <Link
+        to={`${currentPath}?movie=${DIVER_MOVIE_NAME}`}
+        className={movie === DIVER_MOVIE_NAME || !movie ? 'selected' : ''}
+      >
+        Ныряльщик
+      </Link>
+      <Link
+        to={`${currentPath}?movie=${DRUNK_NOTES_MOVIE_NAME}`}
+        className={movie === DRUNK_NOTES_MOVIE_NAME ? 'selected' : ''}
+      >
+        Записки по пьяни
+      </Link>
     </div>
   )
 }
