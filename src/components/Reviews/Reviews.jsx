@@ -1,16 +1,14 @@
 import './Reviews.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
-import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../../utils/name_constants'
-import { useSearchParams } from 'react-router-dom'
+import { useSelectedMovie } from '../../hooks/useSelectedMovie'
 
 const Reviews = () => {
-  const [searchParams] = useSearchParams()
-  const movie = searchParams.get('movie')
+  const { isDiver, isDrunkNotes } = useSelectedMovie()
 
   return (
     <div className="ReviewsWrapper">
       <MovieSelectionTabs />
-      {(movie === DIVER_MOVIE_NAME || !movie) && (
+      {isDiver && (
         <div className="Reviews">
           <a
             href="https://rus-shake.ru/criticism/Gaydin/Hamlet-Diver/"
@@ -51,7 +49,7 @@ const Reviews = () => {
           </p>
         </div>
       )}
-      {movie === DRUNK_NOTES_MOVIE_NAME && (
+      {isDrunkNotes && (
         <div className="Reviews">
           <h1>
             <b>Отзывы зрителей:</b>

@@ -1,19 +1,17 @@
 import './ImageGallery.css'
-import { DIVER_MOVIE_NAME, movieTitles, movieToFolderMap } from '../../utils/nameConstants'
-import { useSearchParams } from 'react-router-dom'
+import { movieTitles } from '../../utils/nameConstants'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
+import { useSelectedMovie } from '../../hooks/useSelectedMovie'
 
 const ImageGallery = () => {
-  const [searchParams] = useSearchParams()
-  const movie = searchParams.get('movie') || DIVER_MOVIE_NAME
+  const { movie } = useSelectedMovie()
 
   const allImages = import.meta.glob('../../assets/images/**/*.{png,jpg,jpeg,svg}', {
     eager: true
   })
 
-  const currentFolder = movieToFolderMap[movie]
-  const imageList = Object.entries(allImages)
-    .filter(([path]) => path.includes(`/${currentFolder}/`))
+  const filteredImages = Object.entries(allImages)
+    .filter(([path]) => path.includes(`/${movie}/`))
     .map(([, module]) => module.default)
 
   const currentMovieTitle = movieTitles[movie]
@@ -21,11 +19,11 @@ const ImageGallery = () => {
   return (
     <div className="ImageGalleryWrapper">
       <MovieSelectionTabs />
-      {!imageList.length ? (
+      {!filteredImages.length ? (
         <p className="ImageGallery-empty">Изображения для этого фильма отсутствуют.</p>
       ) : (
         <div className="ImageGallery">
-          {imageList.map((image, index) => (
+          {filteredImages.map((image, index) => (
             <img
               key={`${movie}-${index}`}
               src={image}
