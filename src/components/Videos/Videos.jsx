@@ -1,6 +1,7 @@
 import YouTube from 'react-youtube'
 import './Videos.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
+import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
 import { useSelectedMovie } from '../../hooks/useSelectedMovie'
 
 const Videos = () => {
@@ -22,40 +23,42 @@ const Videos = () => {
   return (
     <div className="VideosWrapper">
       <MovieSelectionTabs />
-      <div className="Videos" role="region" aria-label="Видеоплеер">
-        {isDiver && (
-          <>
-            <h2 id="diver-russian">Фильм "Ныряльщик" (русская версия):</h2>
-            <YouTube
-              videoId="auCTYCmSrw0"
-              opts={options}
-              onReady={onReady}
-              title="Фильм Ныряльщик на русском языке"
-              aria-labelledby="diver-russian"
-            />
-            <h2 id="diver-english">"The Diver" movie (with English subtitles):</h2>
-            <YouTube
-              videoId="dktfmkmbNEo"
-              opts={options}
-              onReady={onReady}
-              title="The Diver movie with English subtitles"
-              aria-labelledby="diver-english"
-            />
-          </>
-        )}
-        {isDrunkNotes && (
-          <>
-            <h2 id="drunk-notes">Фильм "Записки по пьяни" (русская версия):</h2>
-            <YouTube
-              videoId="L2lkHGfX8JI"
-              opts={options}
-              onReady={onReady}
-              title="Фильм Записки по пьяни"
-              aria-labelledby="drunk-notes"
-            />
-          </>
-        )}
-      </div>
+      <ErrorBoundary fallbackMessage="Не удалось загрузить видеоплеер. Проверьте подключение к интернету.">
+        <div className="Videos" role="region" aria-label="Видеоплеер">
+          {isDiver && (
+            <>
+              <h2 id="diver-russian">Фильм "Ныряльщик" (русская версия):</h2>
+              <YouTube
+                videoId="auCTYCmSrw0"
+                opts={options}
+                onReady={onReady}
+                title="Фильм Ныряльщик на русском языке"
+                aria-labelledby="diver-russian"
+              />
+              <h2 id="diver-english">"The Diver" movie (with English subtitles):</h2>
+              <YouTube
+                videoId="dktfmkmbNEo"
+                opts={options}
+                onReady={onReady}
+                title="The Diver movie with English subtitles"
+                aria-labelledby="diver-english"
+              />
+            </>
+          )}
+          {isDrunkNotes && (
+            <>
+              <h2 id="drunk-notes">Фильм "Записки по пьяни" (русская версия):</h2>
+              <YouTube
+                videoId="L2lkHGfX8JI"
+                opts={options}
+                onReady={onReady}
+                title="Фильм Записки по пьяни"
+                aria-labelledby="drunk-notes"
+              />
+            </>
+          )}
+        </div>
+      </ErrorBoundary>
     </div>
   )
 }

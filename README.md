@@ -12,6 +12,13 @@ A portfolio website showcasing independent film projects "Ныряльщик" (T
 - **react-youtube** - YouTube player integration
 - **CSS** - Styling with flexbox and responsive design
 
+## Features
+
+- Responsive design for mobile and desktop
+- Custom React hook for movie selection logic
+- Error boundaries for graceful error handling
+- Accessibility features (ARIA labels, semantic HTML)
+
 ## Available Scripts
 
 In the project directory, you can run:

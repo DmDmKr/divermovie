@@ -6,20 +6,23 @@ import Reviews from './components/Reviews/Reviews'
 import ImageGallery from './components/ImageGallery/ImageGallery'
 import Movie from './components/Videos/Videos'
 import Footer from './components/Footer/Footer'
+import ErrorBoundary from './components/ErrorBoundary/ErrorBoundary'
 import './App.css'
 
 const App = () => {
   return (
     <div className="AppWrapper">
       <NavBar />
-      <Routes>
-        <Route path="*" element={<Navigate to="/authors" />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/authors" element={<Authors />} />
-        <Route path="/reviews" element={<Reviews />} />
-        <Route path="/image-gallery" element={<ImageGallery />} />
-        <Route path="/videos" element={<Movie />} />
-      </Routes>
+      <ErrorBoundary>
+        <Routes>
+          <Route path="*" element={<Navigate to="/authors" />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/authors" element={<Authors />} />
+          <Route path="/reviews" element={<Reviews />} />
+          <Route path="/image-gallery" element={<ImageGallery />} />
+          <Route path="/videos" element={<Movie />} />
+        </Routes>
+      </ErrorBoundary>
       <Footer />
     </div>
   )
