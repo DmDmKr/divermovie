@@ -24,7 +24,10 @@ class ErrorBoundary extends Component {
             {this.props.fallbackMessage ||
               'Не удалось загрузить этот компонент. Пожалуйста, обновите страницу.'}
           </p>
-          <button onClick={() => window.location.reload()} className="error-reload-btn">
+          <button
+            onClick={() => this.setState({ hasError: false, error: null })}
+            className="error-reload-btn"
+          >
             Обновить страницу
           </button>
         </div>

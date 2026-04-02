@@ -1,13 +1,11 @@
 import { useSearchParams } from 'react-router-dom'
-import { DIVER_MOVIE_NAME, DRUNK_NOTES_MOVIE_NAME } from '../utils/nameConstants'
+import { MOVIES, VALID_MOVIES } from '../utils/nameConstants'
 
 export const useSelectedMovie = () => {
   const [searchParams] = useSearchParams()
-  const movie = searchParams.get('movie') || DIVER_MOVIE_NAME
+  const raw = searchParams.get('movie')
+  // VALID_MOVIES is a module-level Set — O(1) lookup, no array allocated per render
+  const movie = VALID_MOVIES.has(raw) ? raw : MOVIES.DIVER
 
-  return {
-    movie,
-    isDiver: movie === DIVER_MOVIE_NAME || !searchParams.get('movie'),
-    isDrunkNotes: movie === DRUNK_NOTES_MOVIE_NAME
-  }
+  return { movie }
 }

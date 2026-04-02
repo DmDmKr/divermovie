@@ -3,27 +3,31 @@ import { movieTitles } from '../../utils/nameConstants'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import { useSelectedMovie } from '../../hooks/useSelectedMovie'
 
+const allImages = import.meta.glob('../../assets/images/**/*.{png,jpg,jpeg,svg}', {
+  eager: true,
+  import: 'default'
+})
+
+const imagesByMovie = {}
+for (const [path, url] of Object.entries(allImages)) {
+  const folder = path.split('/').at(-2)
+  ;(imagesByMovie[folder] ??= []).push(url)
+}
+
 const ImageGallery = () => {
   const { movie } = useSelectedMovie()
-
-  const allImages = import.meta.glob('../../assets/images/**/*.{png,jpg,jpeg,svg}', {
-    eager: true
-  })
-
-  const filteredImages = Object.entries(allImages)
-    .filter(([path]) => path.includes(`/${movie}/`))
-    .map(([, module]) => module.default)
+  const images = imagesByMovie[movie] ?? []
 
   const currentMovieTitle = movieTitles[movie]
 
   return (
     <div className="ImageGalleryWrapper">
-      <MovieSelectionTabs />
-      {!filteredImages.length ? (
+      <MovieSelectionTabs selectedMovie={movie} />
+      {!images.length ? (
         <p className="ImageGallery-empty">Изображения для этого фильма отсутствуют.</p>
       ) : (
         <div className="ImageGallery">
-          {filteredImages.map((image, index) => (
+          {images.map((image, index) => (
             <img
               key={`${movie}-${index}`}
               src={image}

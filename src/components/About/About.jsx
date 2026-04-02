@@ -2,16 +2,18 @@ import './About.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import diverConceptPhoto from '../../assets/diver_concept_photo.jpg'
 import drunkNotesConceptPhoto from '../../assets/drunk_notes_concept_photo.jpg'
+import linesOfContactConceptPhoto from '../../assets/lines_of_contact_concept_photo.jpg'
 import { useSelectedMovie } from '../../hooks/useSelectedMovie'
+import { MOVIES } from '../../utils/nameConstants'
 
 const About = () => {
-  const { isDiver } = useSelectedMovie()
+  const { movie } = useSelectedMovie()
 
   return (
     <div className="About">
-      <MovieSelectionTabs />
+      <MovieSelectionTabs selectedMovie={movie} />
 
-      {isDiver ? (
+      {movie === MOVIES.DIVER && (
         <>
           <p>
             Это кино на основе "Трагической истории о Гамлете, принце Датском" Уильяма Шекспира. В
@@ -26,7 +28,8 @@ const About = () => {
           </p>
           <img src={diverConceptPhoto} alt="water_rings_picture"></img>
         </>
-      ) : (
+      )}
+      {movie === MOVIES.DRUNK_NOTES && (
         <>
           <p>
             Мой приход снедает тоска, точнее не скажешь. Как и множество других приходов! Тоска
@@ -41,6 +44,29 @@ const About = () => {
             "Дневник сельского священника"{' '}
           </p>
           <img src={drunkNotesConceptPhoto} alt="musians_on_moscow_street_picture"></img>
+        </>
+      )}
+      {movie === MOVIES.LINES_OF_CONTACT && (
+        <>
+          <p className="About-poem">{`Пять изгибов сокровенных
+Добрых линий на земле.
+К ним причастные во мгле
+Пять стенаний вдохновенных.
+Вы, рожденные вдали,
+Мне, смятенному, причастны
+Краем дальним и прекрасным
+Переполненной земли.
+Пять изгибов вдохновенных,
+Семь и десять по краям,
+Восемь, девять, средний храм —
+Пять стенаний сокровенных,
+Но ужасней — средний храм —
+Меж десяткой и девяткой,
+С черной, выспренней загадкой,
+С воскуреньями богам.
+
+А. А. Блок 1901 г.`}</p>
+          <img src={linesOfContactConceptPhoto} alt="lines_of_contact_concept_photo"></img>
         </>
       )}
     </div>

@@ -1,7 +1,16 @@
-export const DIVER_MOVIE_NAME = 'diver'
-export const DRUNK_NOTES_MOVIE_NAME = 'drunk-notes'
+export const MOVIES = Object.freeze({
+  DIVER: 'diver',
+  DRUNK_NOTES: 'drunk-notes',
+  LINES_OF_CONTACT: 'lines-of-contact'
+})
 
-export const movieTitles = {
-  [DIVER_MOVIE_NAME]: 'Ныряльщик',
-  [DRUNK_NOTES_MOVIE_NAME]: 'Записки по-пьяни'
-}
+// Pre-built Set for O(1) validation in useSelectedMovie — avoids allocating
+// a new array on every render via Object.values()
+export const VALID_MOVIES = new Set(Object.values(MOVIES))
+
+// Single source of truth for all movie display strings.
+export const movieTitles = Object.freeze({
+  [MOVIES.DIVER]: 'Ныряльщик',
+  [MOVIES.DRUNK_NOTES]: 'Записки по пьяни',
+  [MOVIES.LINES_OF_CONTACT]: 'Линии соприкосновения'
+})
