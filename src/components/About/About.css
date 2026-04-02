@@ -13,6 +13,11 @@
   min-width: 800px;
 }
 
+.About-poem {
+  white-space: pre-line;
+  text-align: left;
+}
+
 @media (orientation: portrait) {
   .About {
     margin: 10px;
