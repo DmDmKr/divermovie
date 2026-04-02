@@ -61,12 +61,15 @@ const Videos = () => {
           {movie === MOVIES.LINES_OF_CONTACT && (
             <>
               <h2 id="lines-of-contact">Фильм "Линии соприкосновения" (русская версия):</h2>
-              <YouTube
-                videoId="vkO_EOuDZsI"
-                opts={VIDEO_OPTIONS}
-                onReady={handlePlayerReady}
+              <iframe
+                width={VIDEO_OPTIONS.width}
+                height={VIDEO_OPTIONS.height}
+                src="https://rutube.ru/play/embed/92c9c5e89fc285cebd1d607250e5489f"
                 title="Фильм Линии соприкосновения"
                 aria-labelledby="lines-of-contact"
+                style={{ border: 'none' }}
+                allow="clipboard-write; autoplay"
+                allowFullScreen
               />
             </>
           )}

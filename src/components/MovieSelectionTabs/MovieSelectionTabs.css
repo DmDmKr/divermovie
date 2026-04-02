@@ -1,5 +1,6 @@
 .MovieSelectionTabs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 50px;
@@ -29,10 +30,21 @@
   color: #ff4500;
 }
 
-@media (orientation: portrait) {
+@media (max-width: 900px) {
   .MovieSelectionTabs {
-    margin: 15px;
-    gap: 1rem;
-    padding-left: 0;
+    gap: 0.6rem;
+    margin: 10px 0;
+  }
+
+  .MovieSelectionTabs a {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .MovieSelectionTabs a {
+    font-size: 14px;
+    padding: 7px 10px;
   }
 }
