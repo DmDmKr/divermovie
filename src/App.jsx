@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router'
 import NavBar from './components/NavBar/NavBar'
 import Authors from './components/Authors/Authors'
 import About from './components/About/About'

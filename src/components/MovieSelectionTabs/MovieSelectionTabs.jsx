@@ -1,4 +1,4 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router'
 import { MOVIES, movieTitles } from '../../utils/nameConstants'
 import './MovieSelectionTabs.css'
 

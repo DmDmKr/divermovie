@@ -1,4 +1,4 @@
-import { useSearchParams } from 'react-router-dom'
+import { useSearchParams } from 'react-router'
 import { MOVIES, VALID_MOVIES } from '../utils/nameConstants'
 
 export const useSelectedMovie = () => {
