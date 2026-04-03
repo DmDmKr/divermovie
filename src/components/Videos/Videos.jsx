@@ -1,22 +1,9 @@
-import YouTube from 'react-youtube'
 import './Videos.css'
 import MovieSelectionTabs from '../MovieSelectionTabs/MovieSelectionTabs'
 import ErrorBoundary from '../ErrorBoundary/ErrorBoundary'
+import VideoPlayer from './VideoPlayer'
 import { useSelectedMovie } from '../../hooks/useSelectedMovie'
 import { MOVIES } from '../../utils/nameConstants'
-
-const VIDEO_OPTIONS = {
-  height: '500',
-  width: '800',
-  playerVars: {
-    autoplay: 0,
-    controls: 1
-  }
-}
-
-const handlePlayerReady = event => {
-  event.target.pauseVideo()
-}
 
 const Videos = () => {
   const { movie } = useSelectedMovie()
@@ -28,50 +15,31 @@ const Videos = () => {
         <div className="Videos" role="region" aria-label="Видеоплеер">
           {movie === MOVIES.DIVER && (
             <>
-              <h2 id="diver-russian">Фильм "Ныряльщик" (русская версия):</h2>
-              <YouTube
-                videoId="auCTYCmSrw0"
-                opts={VIDEO_OPTIONS}
-                onReady={handlePlayerReady}
-                title="Фильм Ныряльщик на русском языке"
-                aria-labelledby="diver-russian"
+              <VideoPlayer
+                title='Фильм "Ныряльщик" (русская версия):'
+                src="https://rutube.ru/play/embed/bb623cc7593278f20a27d3001f9ed774/"
+                ariaLabelId="diver-russian"
               />
-              <h2 id="diver-english">"The Diver" movie (with English subtitles):</h2>
-              <YouTube
-                videoId="dktfmkmbNEo"
-                opts={VIDEO_OPTIONS}
-                onReady={handlePlayerReady}
-                title="The Diver movie with English subtitles"
-                aria-labelledby="diver-english"
+              <VideoPlayer
+                title='"The Diver" movie (with English subtitles):'
+                src="https://www.youtube.com/embed/dktfmkmbNEo"
+                ariaLabelId="diver-english"
               />
             </>
           )}
           {movie === MOVIES.DRUNK_NOTES && (
-            <>
-              <h2 id="drunk-notes">Фильм "Записки по пьяни" (русская версия):</h2>
-              <YouTube
-                videoId="L2lkHGfX8JI"
-                opts={VIDEO_OPTIONS}
-                onReady={handlePlayerReady}
-                title="Фильм Записки по пьяни"
-                aria-labelledby="drunk-notes"
-              />
-            </>
+            <VideoPlayer
+              title='Фильм "Записки по пьяни" (русская версия):'
+              src="https://rutube.ru/play/embed/3857192a732537a20793ceecbc2ef504/"
+              ariaLabelId="drunk-notes"
+            />
           )}
           {movie === MOVIES.LINES_OF_CONTACT && (
-            <>
-              <h2 id="lines-of-contact">Фильм "Линии соприкосновения" (русская версия):</h2>
-              <iframe
-                width={VIDEO_OPTIONS.width}
-                height={VIDEO_OPTIONS.height}
-                src="https://rutube.ru/play/embed/92c9c5e89fc285cebd1d607250e5489f"
-                title="Фильм Линии соприкосновения"
-                aria-labelledby="lines-of-contact"
-                style={{ border: 'none' }}
-                allow="clipboard-write; autoplay"
-                allowFullScreen
-              />
-            </>
+            <VideoPlayer
+              title='Фильм "Линии соприкосновения" (русская версия):'
+              src="https://rutube.ru/play/embed/92c9c5e89fc285cebd1d607250e5489f"
+              ariaLabelId="lines-of-contact"
+            />
           )}
         </div>
       </ErrorBoundary>

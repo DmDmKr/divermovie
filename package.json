@@ -7,8 +7,7 @@
   "dependencies": {
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "react-router": "^7.13.2",
-    "react-youtube": "^10.1.0"
+    "react-router": "^7.13.2"
   },
   "scripts": {
     "dev": "vite",
